@@ -5,71 +5,556 @@
     <meta charset="UTF-8">
     <title>Lightning Design System</title>
     <link rel="stylesheet" href="bower_components/salesforce-lightning-design-system/assets/styles/salesforce-lightning-design-system.min.css">
+    <link rel="icon" href="fav.ico" sizes="48x48">
 </head>
 <!-- <code>&nbsp;&nbsp;</code> -->
+
 <body>
-    <div class="slds-grid slds-wrap slds-grid--pull-padded">
-        <div class="slds-p-around--large slds-size--1-of-1">
-            <div class="slds-box slds-theme--shade">
-                <!-- Title -->
-                <h2 class="slds-text-heading--large slds-align--absolute-center">Align Center</h2>
-                <div class="slds-has-divider--bottom-space"></div>
-                <!-- Markup -->
-                <div class="slds-align--absolute-center">This content will be positioned in the absolute center of its container</div>
-                <div class="slds-has-divider--bottom-space"></div>
-                <!-- Description -->
-                <p class="slds-align--absolute-center">
-                    Uses <code>&nbsp;display flex &nbsp;</code> and <code>&nbsp;justify content center&nbsp;</code>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="slds-p-around--large slds-size--1-of-1">
-        <div class="slds-box slds-theme--shade">
-            <!-- Title -->
-            <h2 class="slds-text-heading--large slds-align--absolute-center">Borders</h2>
-            <div class="slds-has-divider--bottom-space"></div>
-            <!-- Markup -->
-            <div class="slds-align--absolute-center slds-border--bottom slds-border--top slds-border--left slds-border--right">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quas!
-            </div>
-            <div class="slds-has-divider--bottom-space"></div>
-            <!-- Description -->
-            <p class="slds-align--absolute-center">
-                Uses <code>&nbsp;1 px solid #d8dde6;&nbsp;</code>
-            </p>
-        </div>
-    </div>
-    <div class="slds-p-around--large slds-size--1-of-1">
-        <div class="slds-box slds-theme--shade">
-            <!-- Title -->
-            <h2 class="slds-text-heading--large slds-align--absolute-center">Floats</h2>
-            <div class="slds-has-divider--bottom-space"></div>
-            <!-- Markup -->
-            <div class="slds-clearfix">
-                <div class="slds-float--none">
-                    None
+    <div class="slds-grid slds-wrap">
+        <!-- Markup -->
+        <div class="slds-size--9-of-12">
+            <div class="slds-grid slds-wrap slds-grid--pull-padded">
+                <!-- ALIGNMENT -->
+                <div id="alignment" class="slds-p-around--large slds-size--12-of-12">
+                    <div class="slds-box slds-theme--shade">
+                        <!-- Title -->
+                        <h2 class="slds-text-heading--large slds-align--absolute-center">Align Center</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-align--absolute-center">This content will be positioned in the absolute center of its container</div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            Uses <code>&nbsp;display flex &nbsp;</code> and <code>&nbsp;justify content center&nbsp;</code>
+                        </p>
+                    </div>
                 </div>
-                <div class="slds-float--left">
-                    Left
+                <!-- ALIGNMENT -->
+                <!-- BORDERS -->
+                <div id="borders" class="slds-p-around--large slds-size--12-of-12">
+                    <div class="slds-box slds-theme--shade">
+                        <!-- Title -->
+                        <h2 class="slds-text-heading--large slds-align--absolute-center">Borders</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-align--absolute-center slds-border--bottom slds-border--top slds-border--left slds-border--right">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quas!
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            Uses <code>&nbsp;1 px solid #d8dde6;&nbsp;</code>
+                        </p>
+                    </div>
                 </div>
-                <br>
-                <br>
-                <div class="slds-float--right">
-                    Right
+                <!-- BORDERS -->
+                <!-- FLOATS -->
+                <div id="floats" class="slds-p-around--large slds-size--12-of-12">
+                    <div class="slds-box slds-theme--shade">
+                        <!-- Title -->
+                        <h2 class="slds-text-heading--large slds-align--absolute-center">Floats</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-clearfix">
+                            <div class="slds-float--none">
+                                None
+                            </div>
+                            <div class="slds-float--left">
+                                Left
+                            </div>
+                            <br>
+                            <br>
+                            <div class="slds-float--right">
+                                Right
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-float--none&nbsp;</code> uses <code>&nbsp;float: none&nbsp;</code>
+                            <br>
+                            <code>&nbsp;slds-float--left&nbsp;</code> uses <code>&nbsp;float: left&nbsp;</code>
+                            <br>
+                            <code>&nbsp;slds-float--right&nbsp;</code> uses <code>&nbsp;float: right&nbsp;</code>
+                            <br>
+                        </p>
+                        <p class="slds-text-align--center">The floated element must be first in the document flow, even if it renders on the right.If you want the parent of the floated element to contain the floats, add the .slds-clearfix class to the parent.</p>
+                    </div>
                 </div>
+                <!-- FLOATS -->
+                <!-- GRID -->
+                <div id="grid" class="slds-p-around--large slds-size--12-of-12">
+                    <div class="slds-box slds-theme--shade">
+                        <!-- Title -->
+                        <h2 class="slds-text-heading--large slds-align--absolute-center">Grid</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Automatic Sizing: Column Stretch</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid">
+                            <div class="slds-col">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">col</div>
+                            </div>
+                            <div class="slds-col">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">col</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid&nbsp;</code> uses <code>&nbsp;display: flex&nbsp;</code>
+                            <code>&nbsp;slds-col&nbsp;</code> uses <code>&nbsp;flex-grow: 1; flex-shrink: 1; flex-basis: auto&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;flex-grow&nbsp;</code> property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+                        </p>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Automatic Sizing: Column Stretch with Gutters  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Automatic Sizing: Column Stretch with Gutters </h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid slds-grid--pull-padded-medium">
+                            <div class="slds-col slds-p-horizontal--medium">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">col</div>
+                            </div>
+                            <div class="slds-col slds-p-horizontal--medium">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">col</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--pull-padded-medium&nbsp;</code> uses <code>&nbsp;margin-right: -1rem; margin-left: -1rem;&nbsp;</code>
+                            <code>&nbsp;slds-p-horizontal--medium&nbsp;</code> uses <code>&nbsp;padding-right: 1rem; padding-left: 1rem;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--pull-padded-medium&nbsp;</code> property pulls the objects out of the container
+                        </p>
+                        <!--  -->
+                        <!-- Automatic Sizing: No Column Stretch -->
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Automatic Sizing: Column Stretch</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid">
+                            <div>
+                                <div class="slds-box slds-theme--default slds-box--small slds-text-align--center">col</div>
+                            </div>
+                            <div>
+                                <div class="slds-box slds-theme--default slds-box--small slds-text-align--center">col</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center"></p>
+                        <p class="slds-text-align--center">
+                            Putting a  <code>&nbsp;div&nbsp;</code> without the class <code>&nbsp;slds-col&nbsp;</code> inside a <code>&nbsp;slds-grid&nbsp;</code> will create this effect 
+                        </p>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Automatic Sizing: Column Stretch with Gutters  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Automatic Sizing: Column Stretch with Gutters </h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                            <div class="slds-grid slds-wrap slds-grid--pull-padded">
+                                <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--12-of-12">1</div>
+                                <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--6-of-12 slds-medium-size--10-of-12 slds-large-size--8-of-12">2</div>
+                                <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--6-of-12 slds-medium-size--2-of-12 slds-large-size--4-of-12">3</div>
+                                <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--12-of-12 slds-medium-size--6-of-12 slds-large-size--4-of-12">4</div>
+                                <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--12-of-12 slds-medium-size--6-of-12 slds-large-size--4-of-12">5</div>
+                                <div class=" slds-p-horizontal--small slds-size--12-of-12 slds-large-size--4-of-12">
+                                    <div class="slds-grid slds-wrap slds-grid--pull-padded">
+                                        <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--6-of-12 slds-medium-size--12-of-12 slds-large-size--6-of-12">6</div>
+                                        <div class="slds-box slds-theme--default slds-p-horizontal--small slds-size--6-of-12 slds-medium-size--12-of-12 slds-large-size--6-of-12">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-size--*-of-*&nbsp;</code> uses <code>&nbsp;width: %&nbsp;</code> the <code>&nbsp;%&nbsp;</code> is based on the number of columns. You can use the following classes to declare the number of columns: <code>&nbsp;slds-size--*-of-1&nbsp;</code>, <code>&nbsp;slds-size--*-of-2&nbsp;</code>, <code>&nbsp;slds-size--*-of-3&nbsp;</code>, <code>&nbsp;slds-size--*-of-4&nbsp;</code>, <code>&nbsp;slds-size--*-of-5&nbsp;</code>, <code>&nbsp;slds-size--*-of-6&nbsp;</code> and <code>&nbsp;slds-size--*-of-12&nbsp;</code>.
+                        </p>
+                        <p class="slds-text-align--center">
+                            In order to have multiple rows and nested columns you have the use the following structure: <code>&nbsp;slds-grid&nbsp;slds-wrap&nbsp;</code> > <code>&nbsp;slds-size--*-of-*&nbsp;</code> > <code>&nbsp;slds-grid&nbsp;slds-wrap&nbsp;</code> > <code>&nbsp;slds-size--*-of-*&nbsp;</code>
+                        </p>
+                        <!--  -->
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Horizontal Alignment Center  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Horizontal Alignment Center</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--align-center">
+                                <div class="slds-box slds-theme--default">Content determines the width unless otherwise set</div>
+                                <div class="slds-box slds-theme--default">1</div>
+                                <div class="slds-box slds-theme--default">2</div>
+                                <div class="slds-box slds-theme--default">3</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--align-center&nbsp;</code> uses <code>&nbsp;justify-content: center;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--align-center&nbsp;</code>class centers all the columns within the grid; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container
+                        </p>
+                        <!--  -->
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Horizontal Alignment Spread  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Horizontal Alignment Spread</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--align-spread">
+                                <div class="slds-box slds-theme--default">Content determines the width unless otherwise set</div>
+                                <div class="slds-box slds-theme--default">1</div>
+                                <div class="slds-box slds-theme--default">2</div>
+                                <div class="slds-box slds-theme--default">3</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--align-spread&nbsp;</code> uses <code>&nbsp;justify-content: space-between;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--align-spread&nbsp;</code>class spreads all the columns along the grid; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container
+                        </p>
+                        <!--  -->        
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Horizontal Alignment End  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Horizontal Alignment End</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--align-end">
+                                <div class="slds-box slds-theme--default">Content determines the width unless otherwise set</div>
+                                <div class="slds-box slds-theme--default">1</div>
+                                <div class="slds-box slds-theme--default">2</div>
+                                <div class="slds-box slds-theme--default">3</div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--align-end&nbsp;</code> uses <code>&nbsp;justify-content: flex-end;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--align-end&nbsp;</code>class sends all the columns to the end of the container; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Vertical Alignment Start  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Vertical Alignment Start</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--vertical-align-start" style="height: 150px;">
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Content determines the width unless otherwise set</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">1</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">2</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">3</div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--vertical-align-start&nbsp;</code> uses <code>align-items: flex-start;&nbsp;align-content: flex-start;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--vertical-align-start&nbsp;</code>class sends all the columns to the top of the container; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container and this container should have a fixed height
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Vertical Alignment Center  -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Vertical Alignment Center</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--vertical-align-center slds-grid--pull-padded" style="height: 150px;">
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Content determines the width unless otherwise set</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">1</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">2</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">3</div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--vertical-align-center&nbsp;</code> uses <code>align-items: center;&nbsp;align-content: center;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--vertical-align-center&nbsp;</code>class vertical centers all the columns within the container; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container and this container should have a fixed height
+                        </p>
+                        <p class="slds-text-align--center">
+                            When <code>&nbsp;slds-grid--vertical-align-center&nbsp;</code> is used in conjunction with <code>&nbsp;slds-grid--align-center&nbsp;</code>, the outcome would horizontally and vertically center align your content in the center of the <code>&nbsp;slds-grid&nbsp;</code>.
+                        </p>
+                        <!--  -->
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Vertical Alignment End -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Vertical Alignment End</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--vertical-align-end" style="height: 150px;">
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Content determines the width unless otherwise set</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">1</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">2</div>
+                                </div>
+                                <div class="slds-col--padded">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">3</div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--vertical-align-end&nbsp;</code> uses <code>align-items: flex-end;&nbsp;align-content: flex-end;&nbsp;</code> plus the <code>&nbsp;display: flex;&nbsp;</code> from <code>&nbsp;slds-grid&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The <code>&nbsp;slds-grid--vertical-align-end&nbsp;</code>class sends all the columns to the bottom of the container; it should be put next to the <code>&nbsp;slds-grid&nbsp;</code> class in the <code>&nbsp;div&nbsp;</code> that works as a container and this container should have a fixed height
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Vertical Alignment Item -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Vertical Alignment Item</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-grid slds-grid--align-spread" style="height: 250px;">
+                                <div class="slds-align-top">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Top Align</div>
+                                </div>
+                                <div class="slds-align-middle">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Middle Align</div>
+                                </div>
+                                <div class="slds-align-bottom">
+                                    <div class="slds-box slds-theme--default slds-text-align--center">Bottom Align</div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-align-top&nbsp;</code> uses <code>&nbsp;vertical-align: top;&nbsp;align-self: flex-start;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-align-middle&nbsp;</code> uses <code>&nbsp;vertical-align: middle;&nbsp;align-self: center;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-align-bottom&nbsp;</code> uses <code>&nbsp;vertical-align: bottom;&nbsp;align-self: flex-end;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The  <code>&nbsp;slds-align-top&nbsp;</code> <code>&nbsp;slds-align-middle&nbsp;</code> <code>&nbsp;slds-align-bottom&nbsp;</code> classes align the columns top, in the middle, or bottom of the container respectively; they should be put inside a <code>&nbsp;slds-grid&nbsp;</code> <code>&nbsp;div&nbsp;</code> that works as a container and this container should have a fixed height.
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Vertical Stretch -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Vertical Stretch</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid slds-grid--vertical-stretch" style="height: 150px;">
+                            <div class="slds-box slds-box--small slds-theme--default slds-m-right--large">1</div>
+                            <div class="slds-box slds-box--small slds-theme--default slds-m-right--large">2</div>
+                            <div class="slds-box slds-box--small slds-theme--default slds-m-right--large">3</div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-grid--vertical-stretch&nbsp;</code> uses <code>&nbsp;align-items: stretch;&nbsp;align-content: stretch;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            The  <code>&nbsp;slds-grid--vertical-stretch&nbsp;</code> class vertical stretches the columns to its container's height, this class should be put next to <code>&nbsp;slds-grid&nbsp;</code> in the <code>&nbsp;div&nbsp;</code> that works as a container and this container should have a fixed height.
+                        </p>
+                        <p class="slds-text-align--center">
+                            By default, grid items extend vertically unless <code>&nbsp;slds-wrap&nbsp;</code> is applied to your parent grid container or you have multiple rows. If you have need multiple rows that stretch the height of the parent grid container, you can apply the class
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Alignment Item Bump -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Alignment Item Bump</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid">
+                            <div class="slds-box slds-box--small slds-theme--default">1</div>
+                            <div class="slds-box slds-box--small slds-theme--default">2</div>
+                            <div class="slds-box slds-box--small slds-theme--default">3</div>
+                            <div class="slds-box slds-box--small slds-theme--default slds-col--bump-left">4</div>
+                            <div class="slds-box slds-box--small slds-theme--default">5</div>
+                            <div class="slds-box slds-box--small slds-theme--default">6</div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-box slds-box--small slds-theme--default">1</div>
+                            <div class="slds-box slds-box--small slds-theme--default">2</div>
+                            <div class="slds-box slds-box--small slds-theme--default">3</div>
+                            <div class="slds-box slds-box--small slds-theme--default slds-col--bump-right">4</div>
+                            <div class="slds-box slds-box--small slds-theme--default">5</div>
+                            <div class="slds-box slds-box--small slds-theme--default">6</div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-col--bump-left&nbsp;</code> uses <code>&nbsp;margin-{direction}: auto;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            To "bump" a single grid item or a grid item plus the precedding grid items that follow, apply the class <code>&nbsp;slds-col--bump-{direction}&nbsp;</code>, with <code>&nbsp;{direction}&nbsp;</code> being either <code>&nbsp;left, right, top&nbsp;</code> or <code>&nbsp;bottom&nbsp;</code> to a grid item.
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Order -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Order</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-p-horizontal--small slds-order--3">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">
+                                    1
+                                </div>
+                            </div>
+                            <div class="slds-col slds-p-horizontal--small slds-order--2">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">
+                                    2
+                                </div>
+                            </div>
+                            <div class="slds-col slds-p-horizontal--small slds-order--1">
+                                <div class="slds-box slds-box--small slds-theme--default slds-text-align--center">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-order--{number}&nbsp;</code> uses <code>&nbsp;order: {number};&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            This helper class visually reorders grid elements independently from their position in the markup.
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Containers -->
+                        <h2 class="slds-text-heading--medium slds-align--absolute-center">Containers</h2>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Markup -->
+                        <div class="">
+                            <div class="slds-container--small slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Small - Max Width: 480px
+                                </div>
+                            </div>
+                            <div class="slds-container--medium slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Medium - Max Width: 768px
+                                </div>
+                            </div>
+                            <div class="slds-container--large slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Large - Max Width: 1024px
+                                </div>
+                            </div>
+                            <div class="slds-container--x-large slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    X-Large - Max Width: 1280px
+                                </div>
+                            </div>
+                            <div class="slds-container--fluid slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Fluid - Width 100%
+                                </div>
+                            </div>
+                            <div class="slds-container--left slds-container--small slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Left - Left Aligned
+                                </div>
+                            </div>
+                            <div class="slds-container--center slds-container--small slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Center - Center Aligned
+                                </div>
+                            </div>
+                            <div class="slds-container--right slds-container--small slds-m-top--x-small">
+                                <div class="slds-box slds-box--small slds-theme--default">
+                                    Right - Right Aligned
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <!-- Description -->
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--small&nbsp;</code> uses <code>&nbsp;max-width: 30rem;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--medium&nbsp;</code> uses <code>&nbsp;max-width: 48rem;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--large&nbsp;</code> uses <code>&nbsp;max-width: 64rem;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--x-large&nbsp;</code> uses <code>&nbsp;max-width: 80rem;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--fluid&nbsp;</code> uses <code>&nbsp;width: 100%;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--left&nbsp;</code> uses <code>&nbsp;margin-right: auto;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--center&nbsp;</code> uses <code>&nbsp;margin-left: auto; margin-right: auto;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            <code>&nbsp;slds-container--right&nbsp;</code> uses <code>&nbsp;margin-left: auto;&nbsp;</code>
+                        </p>
+                        <p class="slds-text-align--center">
+                            These classes should be applied to outer <code>&nbsp;divs&nbsp;</code> working as containers. 
+                        </p>
+                        <!--  --> 
+                        <div class="slds-has-divider--bottom-space"></div>
+                        <p class="slds-text-align--center slds-p-vertical--small">
+                            GRID WRAPPER
+
+                            To use the grid system, add the class .slds-grid to an element, component, or page layout. Each grid is independent of other nested grids. You can limit attributes of each grid to specific regions in the app. A grid style is not an all or nothing solution.
+
+                            Adding the class .slds-wrap causes the flow of your .slds-col elements to wrap when they exceed 100% of their parent’s width.
+
+                            You can easily change the flow direction of your grid by adding a modifier class to the .slds-grid element. To stack your columns vertically instead of their default row behavior, use .slds-grid--vertical. You can also reverse the left to right behavior by adding .slds-grid--reverse or top to bottom by adding .slds-grid--vertical-reverse.
+
+                            If you want your application to fill 100% of the width and height of the viewport and nest other grids inside, use the top-level app helper class .slds-grid--frame. An assortment of .slds-container classes are available to contain your grids.
+                        </p>
+                        <p class="slds-text-align--center slds-p-vertical--small">
+                            GRID ITEMS (REGIONS/COLUMS)
+
+                            When you add the class .slds-col to the grid items, no padding or gutters are added. They are simply divisions of their parent. If you want gutters, add one of the spacing utility classes such as .slds-p-horizontal--small, .slds-p-horizontal--medium, .slds-p-horizontal--large, .slds-p-around--small, .slds-p-around--medium or .slds-p-around--large. These will add different sized gutters to the left and right side of your column.
+
+                            By default, the width of each column within a grid row is determined by the content within. Though this automatic sizing allows you to achieve most desired outcomes, you can add manual sizing classes to the columns if you need specific column widths.
+
+                            Using the manual sizing class helpers, you can specify a column span across the following grids –2, 3, 4, 5, 6, 7, 8 and 12. The grid supports up to 12 columns.
+                        </p>
+                    </div>
+                </div>
+                <!-- GRID -->
             </div>
-            <div class="slds-has-divider--bottom-space"></div>
-            <!-- Description -->
-            <p class="slds-align--absolute-center">
-                <code>&nbsp;slds-float--none&nbsp;</code> uses <code>&nbsp;float: none&nbsp;</code>
-                <br>
-                <code>&nbsp;slds-float--left&nbsp;</code> uses <code>&nbsp;float: left&nbsp;</code>
-                <br>
-                <code>&nbsp;slds-float--right&nbsp;</code> uses <code>&nbsp;float: right&nbsp;</code>
-                <br>
-            </p>
-            <p class="slds-align--absolute-center">The floated element must be first in the document flow, even if it renders on the right.If you want the parent of the floated element to contain the floats, add the .slds-clearfix class to the parent.</p>
+            <!-- <code>&nbsp;&nbsp;</code> -->
         </div>
     </div>
 </body>
